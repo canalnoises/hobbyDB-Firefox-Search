@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "hobbyDB Search",
+  "version": "1.0",
+  
+  "description": "Adds a search engine for Database Items on hobbyDB.com",
+
+  "icons": {
+    "48": "icons/hDB-48.png",
+    "96": "icons/hDB-96.png"
+  },
+  
+  
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "hobbyDB",
+      "search_url": "https://www.hobbydb.com/marketplaces/hobbydb/catalog_items?filters[q][0]={searchTerms}",
+      "keyword": "@hdb",
+      "favicon_url": "icons/hDB-64.png",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+
+}
